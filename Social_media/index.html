@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social_Friends</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <div class="nav-left">
+        <img src="./image/logo.png" class="logo" alt="logo" />
+        <ul>
+          <li>
+            <img src="./image/notification.png" alt="notification" />
+          </li>
+          <li>
+            <img src="./image/inbox.png" alt="inbox" />
+          </li>
+          <li>
+            <img src="./image/video.png" alt="video" />
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="image/search.png" alt="Search" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-id online" onclick="settingMenuToggle()">
+          <img src="image/profile-pic.jpg" alt="profile" />
+        </div>
+      </div>
+      <!-- setting -->
+      <div class="settings-menu">
+        <!-- dark btn -->
+        <div id="dark-btn">
+          <span></span>
+        </div>
+        <div class="setting-menu-inner">
+          <div class="user-profile">
+            <img src="image/profile-pic.jpg" alt="profile" />
+            <div>
+              <p>Yash</p>
+              <a href="">See My Profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="image/feedback.png" alt="profile" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="">Like and Share</a>
+            </div>
+          </div>
+          <hr />
+          <div class="setting-link">
+            <img src="image/setting.png" class="setting-icon" alt="setting" />
+            <a href=""
+              >Setting & Privacy
+              <img src="image/arrow.png" width="10px" alt="setting"
+            /></a>
+          </div>
+          <div class="setting-link">
+            <img src="image/help.png" class="setting-icon" alt="help" />
+            <a href=""
+              >Help & Support
+              <img src="image/arrow.png" width="10px" alt="setting"
+            /></a>
+          </div>
+          <div class="setting-link">
+            <img src="image/display.png" class="setting-icon" alt="display" />
+            <a href=""
+              >Display <img src="image/arrow.png" width="10px" alt="setting"
+            /></a>
+          </div>
+          <div class="setting-link">
+            <img src="image/logout.png" class="setting-icon" alt="logout" />
+            <a href=""
+              >Logout <img src="image/arrow.png" width="10px" alt="setting"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- container -->
+    <div class="container">
+      <!-- left-sidebar -->
+      <div class="left-sidebar">
+        <div class="imp-link">
+          <a href=""><img src="image/news.png" alt="news" />Latest News</a>
+          <a href=""><img src="image/friends.png" alt="friends" />Friends</a>
+          <a href=""><img src="image/group.png" alt="group" />Group</a>
+          <a href=""><img src="image/watch.png" alt="watch" />Watch</a>
+          <a href=""
+            ><img src="image/marketplace.png" alt="marketplace" />Marketplace</a
+          >
+          <a href=""><img src="image/see-more.png" alt="see-more" />See More</a>
+        </div>
+        <div class="shortcut-link">
+          <p>Your shortcut-link</p>
+          <a href=""><img src="image/shortcut-1.png" alt="shortcut-1" />AI</a>
+          <a href=""><img src="image/shortcut-2.png" alt="shortcut-2" />ML</a>
+          <a href=""><img src="image/shortcut-3.png" alt="shortcut-3" />IOT</a>
+          <a href=""
+            ><img src="image/shortcut-4.png" alt="shortcut-4" />Web Desgin</a
+          >
+        </div>
+      </div>
+      <!-- main-sidebar -->
+      <div class="main-sidebar">
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="image/upload.png" alt="upload" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story2">
+            <img src="image/member-2.png" alt="upload" />
+            <p>Bob</p>
+          </div>
+          <div class="story story3">
+            <img src="image/member-3.png" alt="upload" />
+            <p>Tonny</p>
+          </div>
+          <div class="story story4">
+            <img src="image/member-4.png" alt="upload" />
+            <p>Rose</p>
+          </div>
+          <div class="story story5">
+            <img src="image/member-5.png" alt="upload" />
+            <p>Harry</p>
+          </div>
+        </div>
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="image/profile-pic.jpg" alt="profile" />
+            <div>
+              <p>Yash</p>
+              <small>Public <i class="fa-solid fa-caret-down"></i></small>
+            </div>
+          </div>
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind John?"
+            ></textarea>
+            <div class="add-post-link">
+              <a href=""
+                ><img src="image/live-video.png" alt="video" />Live Video</a
+              >
+              <a href=""
+                ><img src="image/feeling.png" alt="feeling" />Feling Activity</a
+              >
+              <a href=""
+                ><img src="image/photo.png" alt="photo" />Photo Video</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- 1 -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="image/profile-pic.jpg" alt="profile" />
+              <div>
+                <p>Yash</p>
+                <span>June 24 2024 , 13:13 pm</span>
+              </div>
+            </div>
+            <a href=""><i class="fas fa-ellipsis-v" aria-hidden="true"></i></a>
+          </div>
+
+          <p class="post-text">Subscrible to read more contain</p>
+          <img class="post-img" src="image/feed-image-1.png" alt="feed-image" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="image/like-blue.png" alt="like-blue" />120</div>
+              <div><img src="image/share.png" alt="share" />45</div>
+              <div><img src="image/comments.png" alt="comments" />41</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="image/profile-pic.jpg" alt="profile" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="image/photo2.png" alt="profile" />
+              <div>
+                <p>Bob</p>
+                <span>June 27 2024 , 13:13 pm</span>
+              </div>
+            </div>
+            <a href=""><i class="fas fa-ellipsis-v" aria-hidden="true"></i></a>
+          </div>
+
+          <p class="post-text">Watch my contain</p>
+          <img
+            class="post-img"
+            src="./image/feed-image-2.png"
+            alt="feed-image"
+          />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="image/like.png" alt="like-blue" />10</div>
+              <div><img src="image/share.png" alt="share" />5</div>
+              <div><img src="image/comments.png" alt="comments" />51</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="image/photo2.png" alt="profile" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="image/photo3.png" alt="profile" />
+              <div>
+                <p>Bob</p>
+                <span>June 27 2024 , 13:13 pm</span>
+              </div>
+            </div>
+            <a href=""><i class="fas fa-ellipsis-v" aria-hidden="true"></i></a>
+          </div>
+
+          <p class="post-text">Watch my contain</p>
+          <img class="post-img" src="image/feed-image-3.png" alt="feed-image" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="image/like.png" alt="like-blue" />10</div>
+              <div><img src="image/share.png" alt="share" />5</div>
+              <div><img src="image/comments.png" alt="comments" />51</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="image/photo3.png" alt="profile" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="image/photo6.png" alt="profile" />
+              <div>
+                <p>Tonny</p>
+                <span>March 27 2024 , 13:13 pm</span>
+              </div>
+            </div>
+            <a href=""><i class="fas fa-ellipsis-v" aria-hidden="true"></i></a>
+          </div>
+
+          <p class="post-text">Watch my contain</p>
+          <img class="post-img" src="image/feed-image-4.png" alt="feed-image" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="image/like.png" alt="like-blue" />170</div>
+              <div><img src="image/share.png" alt="share" />59</div>
+              <div><img src="image/comments.png" alt="comments" />151</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="image/photo6.png" alt="profile" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="image/photo4.png" alt="profile" />
+              <div>
+                <p>Jack</p>
+                <span>Jan 27 2024 , 13:13 pm</span>
+              </div>
+            </div>
+            <a href=""><i class="fas fa-ellipsis-v" aria-hidden="true"></i></a>
+          </div>
+
+          <p class="post-text">Watch my contain</p>
+          <img class="post-img" src="image/feed-image-5.png" alt="feed-image" />
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="image/like-blue.png" alt="like-blue" />130</div>
+              <div><img src="image/share.png" alt="share" />55</div>
+              <div><img src="image/comments.png" alt="comments" />5</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="image/photo4.png" alt="profile" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="load-more-btn">Load More</button>
+      </div>
+
+      <!-- right-sidebar -->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="">Sell All</a>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+          <div class="right-event">
+            <h4>Social Media</h4>
+            <p><i class="fa-solid fa-location-dot"></i>Loction: Delhi</p>
+            <a href="">More Info</a>
+          </div>
+        </div>
+        <div class="event">
+          <div class="left-event">
+            <h3>20</h3>
+            <span>March</span>
+          </div>
+          <div class="right-event">
+            <h4>Digital Marketing</h4>
+            <p><i class="fa-solid fa-location-dot"></i>Loction: Kolkata</p>
+            <a href="">More Info</a>
+          </div>
+        </div>
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="">Close</a>
+        </div>
+        <img
+          src="image/advertisement.png"
+          alt="advertisement"
+          class="sidebar-ads"
+        />
+        <div class="sidebar-title">
+          <h4>Conversation</h4>
+          <a href="">Hidden Chat</a>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="image/member-1.png" alt="member-1" />
+          </div>
+          <p>Bob</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="image/member-2.png" alt="member-2" />
+          </div>
+          <p>Tonny Stack</p>
+        </div>
+        <div class="online-list">
+          <div class="online">
+            <img src="image/member-3.png" alt="member-3" />
+          </div>
+          <p>Rose</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright 2024</p>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/88cf54ad25.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
